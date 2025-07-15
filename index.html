@@ -10,56 +10,78 @@
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
-      padding: 0;
       background-color: #ffffff;
       color: #111827;
     }
 
-    header {
+    .hero {
       background-color: #fcd535;
-      color: #111827;
-      padding: 2rem;
       text-align: center;
+      padding: 3rem 1rem 2rem;
     }
 
-    header img {
+    .hero img {
       width: 72px;
       height: 72px;
-      margin-bottom: 1rem;
       border-radius: 16px;
-    }
-
-    .hero {
-      padding: 3rem 1rem;
-      text-align: center;
+      margin-bottom: 1rem;
     }
 
     .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+      font-size: 2rem;
+      margin: 0.25rem 0;
     }
 
     .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-      color: #4b5563;
+      font-size: 1.1rem;
+      color: #333333;
+      margin: 0.5rem 0 1.5rem;
     }
 
-    .btn-download {
-      display: inline-block;
-      background-color: #fcd535;
-      color: #111827;
+    .hero .cta {
+      background-color: #111827;
+      color: white;
       padding: 0.75rem 1.5rem;
-      border-radius: 0.5rem;
       font-weight: 600;
+      border-radius: 999px;
       text-decoration: none;
+      display: inline-block;
+      margin-bottom: 3rem;
+    }
+
+    .screenshot-stack {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 1rem;
+      padding-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .screenshot-stack img {
+      border-radius: 1.5rem;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .main-screenshot {
+      width: 220px;
+      z-index: 2;
+    }
+
+    .side-screenshot {
+      width: 160px;
+      opacity: 0.9;
+    }
+
+    .features, .screenshots, .contact {
+      padding: 3rem 1rem;
+      text-align: center;
     }
 
     .features {
       display: flex;
       flex-wrap: wrap;
       gap: 2rem;
-      padding: 3rem 1rem;
       justify-content: center;
     }
 
@@ -69,24 +91,12 @@
       border-radius: 1rem;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
       max-width: 300px;
-      text-align: center;
-    }
-
-    .screenshots {
-      padding: 3rem 1rem;
-      text-align: center;
     }
 
     .screenshots img {
       width: 200px;
       margin: 1rem;
       border-radius: 1rem;
-    }
-
-    .contact {
-      padding: 3rem 1rem;
-      background-color: #f3f4f6;
-      text-align: center;
     }
 
     .contact form {
@@ -124,18 +134,18 @@
 </head>
 
 <body>
-  <header>
-    <img src="app-icon.png" alt="App Icon" />
+  <section class="hero">
+    <img src="app-icon.png" alt="App Icon">
     <h1>Mark Attendance</h1>
     <p>Simple. Smart. Reliable Attendance Manager.</p>
-  </header>
+    <p><strong>Track Attendance Effortlessly</strong><br/>Manage your classes, students, and attendance on the go.</p>
+    <a href="https://play.google.com/store/apps/details?id=pro.manager.attendance" target="_blank" class="cta">Get it on Google Play</a>
 
-  <section class="hero">
-    <h1>Track Attendance Effortlessly</h1>
-    <p>Manage your classes, subjects, and reports in one place. Stay organized and never miss a mark!</p>
-    <a class="btn-download" href="https://play.google.com/store/apps/details?id=pro.manager.attendance" target="_blank">
-      Get it on Google Play
-    </a>
+    <div class="screenshot-stack">
+      <img src="sc-2.jpeg" class="side-screenshot" alt="Screenshot 2" />
+      <img src="sc-1.jpeg" class="main-screenshot" alt="Screenshot 1" />
+      <img src="sc-3.jpeg" class="side-screenshot" alt="Screenshot 3" />
+    </div>
   </section>
 
   <section class="features">
@@ -154,14 +164,11 @@
   </section>
 
   <section class="screenshots">
-    <h2>App Screenshots</h2>
-    <img src="sc-1.jpg" alt="Screenshot 1" />
-    <img src="sc-2.jpg" alt="Screenshot 2" />
-    <img src="sc-3.jpg" alt="Screenshot 3" />
-    <img src="sc-4.jpg" alt="Screenshot 4" />
-    <img src="sc-5.jpg" alt="Screenshot 5" />
-    <img src="sc-6.jpg" alt="Screenshot 6" />
-    <img src="sc-7.jpg" alt="Screenshot 7" />
+    <h2>More Screenshots</h2>
+    <img src="sc-4.jpeg" alt="Screenshot 4" />
+    <img src="sc-5.jpeg" alt="Screenshot 5" />
+    <img src="sc-6.jpeg" alt="Screenshot 6" />
+    <img src="sc-7.jpeg" alt="Screenshot 7" />
   </section>
 
   <section class="contact">
