@@ -28,11 +28,12 @@
     }
 
     .hero {
+      background: var(--primary);
+      padding: 4rem 1rem 0;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
-      padding: 3rem 1rem;
       max-width: 1200px;
       margin: auto;
     }
@@ -46,7 +47,6 @@
     .hero-text img {
       width: 64px;
       height: 64px;
-      border-radius: 16px;
       margin-bottom: 1rem;
     }
 
@@ -56,13 +56,13 @@
     }
 
     .hero-text p {
-      color: var(--muted);
+      color: #333;
       margin-bottom: 1.5rem;
     }
 
     .hero-text a {
-      background-color: var(--primary);
-      color: var(--text);
+      background-color: #111827;
+      color: white;
       padding: 0.75rem 1.5rem;
       border-radius: 0.5rem;
       text-decoration: none;
@@ -71,14 +71,15 @@
 
     .hero-image {
       flex: 1;
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
     }
 
     .hero-image img {
-      max-width: 300px;
       width: 100%;
-      border-radius: 1.5rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 450px;
+      margin-top: 2rem;
     }
 
     .section {
@@ -157,13 +158,13 @@
 <body>
   <section class="hero">
     <div class="hero-text">
-      <img src="app-icon.png" alt="App Icon">
+      <img src="app-icon.svg" alt="App Icon">
       <h1>Mark Attendance</h1>
       <p>Simple. Smart. Reliable Attendance Manager. Stay on top of your student logs with ease.</p>
       <a href="https://play.google.com/store/apps/details?id=pro.manager.attendance" target="_blank">Get it on Google Play</a>
     </div>
     <div class="hero-image">
-      <img src="sc_hero.png" alt="App Screenshot">
+      <img src="sc_hero.jpg" alt="Hero Screenshot">
     </div>
   </section>
 
@@ -188,7 +189,7 @@
   <section class="section">
     <h2 style="text-align:center;">More Screenshots</h2>
     <div class="screenshots">
-      <img src="sc-1.jpg" alt="Screenshot 2">
+      <img src="sc-1.jpg" alt="Screenshot 1">
       <img src="sc-2.jpg" alt="Screenshot 2">
       <img src="sc-3.jpg" alt="Screenshot 3">
       <img src="sc-4.jpg" alt="Screenshot 4">
